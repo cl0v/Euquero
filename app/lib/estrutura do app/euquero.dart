@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 class Euquero extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(),
-      appBar: AppBar(),
+    return MaterialApp(
+      home: Scaffold(),
     );
   }
 }
