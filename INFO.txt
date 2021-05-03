@@ -1,1 +1,2 @@
-Ola flutter =
+//Desenvolvimento do app da Euquero:
+
