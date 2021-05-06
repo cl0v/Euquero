@@ -1,5 +1,5 @@
 import 'package:app/estrutura%20do%20app/widgets/BottomNavBarWidget.dart';
-import 'package:app/estrutura%20do%20app/widgets/TopMenus.dart';
+import 'package:app/estrutura%20do%20app/widgets/StoreList.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -11,7 +11,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: TopMenus(),
+      body: StoreList(),
       bottomNavigationBar: BottomNavBarWidget(),
     );
   }
