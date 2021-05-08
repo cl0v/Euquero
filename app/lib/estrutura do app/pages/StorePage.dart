@@ -1,7 +1,6 @@
 import 'package:app/estrutura%20do%20app/widgets/BannerBar.dart';
 import 'package:app/estrutura%20do%20app/widgets/SubTitles.dart';
 import 'package:app/estrutura%20do%20app/widgets/TopMenus.dart';
-import 'package:app/estrutura%20do%20app/widgets/UpBar.dart';
 import 'package:app/estrutura%20do%20app/widgets/food_card.dart';
 import 'package:app/estrutura%20do%20app/widgets/search_file.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +11,6 @@ class StorePage extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          UpBar(),
           BannerBar(),
           Divider(
             height: 20,

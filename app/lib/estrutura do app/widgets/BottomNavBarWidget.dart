@@ -1,3 +1,4 @@
+import 'package:app/estrutura%20do%20app/pages/AlertPage.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBarWidget extends StatefulWidget {
@@ -9,12 +10,6 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
   @override
   Widget build(BuildContext context) {
     int _selectedIndex = 0;
-    void _onItemTapped(int index) {
-      setState(() {
-        _selectedIndex = index;
-//        navigateToScreens(index);
-      });
-    }
 
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
@@ -25,9 +20,14 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
             icon: Icon(Icons.add_shopping_cart), label: "Carrinho"),
         BottomNavigationBarItem(icon: Icon(Icons.person), label: "Perfil"),
       ],
-      currentIndex: _selectedIndex,
       selectedItemColor: Color(0xFFfd5352),
-      onTap: _onItemTapped,
+      onTap: (index) {
+        setState(() {
+          _selectedIndex = index;
+          print(_selectedIndex);
+        });
+      },
+      currentIndex: _selectedIndex,
     );
   }
 }

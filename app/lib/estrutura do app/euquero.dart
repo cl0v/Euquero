@@ -7,7 +7,7 @@ class Euquero extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Eu Quero Delivery App",
-      theme: ThemeData(primaryColor: Colors.amber),
+      theme: ThemeData(primaryColor: Colors.amber, accentColor: Colors.amber),
       home: Home(),
     );
   }
