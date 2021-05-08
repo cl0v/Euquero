@@ -11,7 +11,7 @@ class UpBar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              "/home/rntcursos/developer/Euquero/Euquero/app/assets/images/logo.png",
+              "assets/images/logo.png",
               width: 180,
             ),
             Column(

@@ -66,9 +66,7 @@ class TopMenuTiles extends StatelessWidget {
                   height: 60,
                   child: Center(
                       child: Image.asset(
-                    '/home/rntcursos/developer/Euquero/Euquero/app/assets/images/' +
-                        imageUrl +
-                        ".png",
+                    'assets/images/' + imageUrl + ".png",
                     width: 24,
                     height: 24,
                   )),
