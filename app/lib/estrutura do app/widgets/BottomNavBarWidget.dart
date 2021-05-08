@@ -1,4 +1,5 @@
 import 'package:app/estrutura%20do%20app/pages/AlertPage.dart';
+import 'package:app/estrutura%20do%20app/pages/StorePage.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBarWidget extends StatefulWidget {
@@ -7,10 +8,10 @@ class BottomNavBarWidget extends StatefulWidget {
 }
 
 class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
+  int _selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
-    int _selectedIndex = 0;
-
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
       items: const <BottomNavigationBarItem>[
@@ -24,8 +25,21 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
       onTap: (index) {
         setState(() {
           _selectedIndex = index;
-          print(_selectedIndex);
         });
+        if (_selectedIndex == 0) {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => StorePage(),
+              ));
+        }
+        if (_selectedIndex == 1) {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => AlertPage(),
+              ));
+        }
       },
       currentIndex: _selectedIndex,
     );
